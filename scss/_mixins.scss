@@ -1,16 +1,12 @@
 // Mixins
 
-@mixin button($bg-color, $hover-color, $text-color) {
-	background-color: $bg-color;
-	color: $text-color;
-	padding: .5em 1em;
-	border-radius: 3px;
-	margin: 1em;
-	display: inline-block;
-	text-decoration: none;
-	transition: all 150ms ease-in-out;
-	//references the parent selector using the '&'
-	&:hover {
-		background-color: $hover-color;
-	}	
+@mixin icon($transition-property, $transition-time, $method){
+	position: relative;
+	bottom: 0;
+	-webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    &:hover {
+    	bottom: 15px;
+    }
 }

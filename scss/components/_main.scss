@@ -1,10 +1,59 @@
 // Main
 
-body {
+@-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+html {
+	box-sizing: border-box;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body, ul {
 	padding: 0;
 	margin: 0;
-	font-family: $sourcesans;
 	color: $primary;
+	text-align: $center;
+}
+
+h1 {
+	font-family: $montserrat;
+	letter-spacing: 10px;
+}
+
+h2 {
+	font-family: $montserrat;
+	font-size: 16px;
+	padding-top: 1rem;
+	letter-spacing: 4px;
+}
+
+.sub {
+	letter-spacing: 5px;
+	line-height: .75rem;
+}
+
+p {
+	font-family: $sourcesans;
+	font-size: 13px;
+	line-height: 1.5rem;
+}
+
+li {
+	list-style-type: none;
+}
+
+.upper {
+	text-transform: uppercase;
 }
 
 .photo {
@@ -22,4 +71,27 @@ body {
 .activities{
 	width: 100%;
 	padding: 1.5rem;
+}
+
+@media only screen and (min-width: 40em) {
+	.activities {
+		float: left;
+		width: 50%;
+	}
+
+	.photo {
+		padding-bottom: 40rem;
+	}
+
+}
+
+@media only screen and (min-width: 70em) {
+	.activities {
+		float: left;
+		width: 25%;
+	}
+}
+
+.icon {
+	@include icon(all, 0.3s, ease-in-out);
 }

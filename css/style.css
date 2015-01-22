@@ -4,14 +4,76 @@ All files that prefixed with an underscore
 "_name-of-file.scss" are called partials - meaning that their css isn't compiled unless it's 
 imported into an unprefixed .scss file
 */
-/* line 3, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
-body {
+@-moz-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-ms-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-o-viewport {
+  width: device-width;
+  scale: 1; }
+
+@-webkit-viewport {
+  width: device-width;
+  scale: 1; }
+
+@viewport {
+  width: device-width;
+  scale: 1; }
+
+/* line 9, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+html {
+  box-sizing: border-box;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%; }
+
+/* line 17, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/* line 21, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+body, ul {
   padding: 0;
   margin: 0;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: white; }
+  color: white;
+  text-align: center; }
 
-/* line 10, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+/* line 28, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 10px; }
+
+/* line 33, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  padding-top: 1rem;
+  letter-spacing: 5px; }
+
+/* line 40, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+.sub {
+  letter-spacing: 5px;
+  line-height: 0.75rem; }
+
+/* line 45, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+p {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 13px;
+  line-height: 1.5rem; }
+
+/* line 51, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+li {
+  list-style-type: none; }
+
+/* line 55, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+.upper {
+  text-transform: uppercase; }
+
+/* line 59, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
 .photo {
   width: 100%;
   padding-top: 6rem;
@@ -19,14 +81,43 @@ body {
   background: transparent url("../images/bg.JPG") no-repeat center top;
   background-size: cover; }
 
-/* line 18, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+/* line 67, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
 .info {
   padding: 6rem 2rem; }
 
-/* line 22, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+/* line 71, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
 .activities {
   width: 100%;
   padding: 1.5rem; }
+
+@media only screen and (min-width: 40em) {
+  /* line 77, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+  .activities {
+    float: left;
+    width: 50%; }
+
+  /* line 82, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+  .photo {
+    padding-bottom: 40rem; }
+ }
+
+@media only screen and (min-width: 70em) {
+  /* line 89, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+  .activities {
+    float: left;
+    width: 25%; }
+ }
+
+/* line 95, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+.icon {
+  position: relative;
+  bottom: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out; }
+  /* line 9, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/mixins */
+  .icon:hover {
+    bottom: 15px; }
 
 @font-face {
   font-family: 'custom-font';
