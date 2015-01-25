@@ -52,7 +52,7 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   padding-top: 1rem;
-  letter-spacing: 5px; }
+  letter-spacing: 4px; }
 
 /* line 40, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
 .sub {
@@ -109,15 +109,17 @@ li {
  }
 
 /* line 95, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
-.icon {
+[class^="icon-"]:before, [class*=" icon-"]:before {
   position: relative;
-  bottom: 0;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out; }
-  /* line 9, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/mixins */
-  .icon:hover {
-    bottom: 15px; }
+  bottom: 0; }
+
+/* line 100, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  transition: all 0.3s ease-in-out; }
+
+/* line 104, /Users/rachellin/Desktop/Algonquin/YEAR 3 - SEMESTER 2/2 - Web Development/week-2-scss/scss/components/main */
+[class^="icon-"]:hover:before, [class*=" icon-"]:hover:before {
+  bottom: 15px; }
 
 @font-face {
   font-family: 'custom-font';

@@ -92,6 +92,15 @@ li {
 	}
 }
 
-.icon {
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	position: relative;
+	bottom: 0;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
 	@include icon(all, 0.3s, ease-in-out);
+}
+
+[class^="icon-"]:hover:before, [class*=" icon-"]:hover:before {
+	bottom: 15px;
 }

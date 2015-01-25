@@ -1,12 +1,8 @@
 // Mixins
 
 @mixin icon($transition-property, $transition-time, $method){
-	position: relative;
-	bottom: 0;
 	-webkit-transition: $transition-property $transition-time $method;
     -moz-transition: $transition-property $transition-time $method;
     -o-transition: $transition-property $transition-time $method;
-    &:hover {
-    	bottom: 15px;
-    }
+    transition: $transition-property $transition-time $method;
 }
